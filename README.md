@@ -818,50 +818,6 @@ For a fresh Windows setup:
 powershell -ExecutionPolicy Bypass -File .\scripts\setup_windows.ps1
 ```
 
----
-
-# Environment Configuration
-
-Create `.env` from `.env.example`.
-
-Example:
-
-```dotenv
-# GitHub
-GITHUB_TOKEN=
-
-# Runtime safety
-CONTEXTBRIDGE_DRY_RUN=true
-GITHUB_WRITES_ENABLED=false
-GITHUB_WRITE_REPOSITORIES=
-
-# Integrated chat provider
-CONTEXTBRIDGE_LLM_PROVIDER=gemini
-CONTEXTBRIDGE_LLM_MODEL=gemini-3.6-flash
-
-# Gemini
-GEMINI_API_KEY=
-
-# OpenAI
-OPENAI_API_KEY=
-OPENAI_BASE_URL=https://api.openai.com
-
-# Ollama
-OLLAMA_BASE_URL=http://127.0.0.1:11434
-OLLAMA_API_KEY=
-
-# Chat behavior
-CONTEXTBRIDGE_CHAT_MAX_TOOL_ROUNDS=8
-CONTEXTBRIDGE_CHAT_HISTORY_MESSAGES=30
-CONTEXTBRIDGE_CHAT_READ_ONLY_DEFAULT=true
-```
-
-Never commit `.env`.
-
-The repository should commit only `.env.example` with blank or placeholder values.
-
----
-
 # Running ContextBridge
 
 ## Start the Dashboard
