@@ -1,0 +1,42 @@
+[
+  {
+    "id": "github_connection_status-01",
+    "actual_tool": "github_connection_status",
+    "actual_arguments": {}
+  },
+  {
+    "id": "github_connection_status-02",
+    "actual_tool": "github_connection_status",
+    "actual_arguments": {}
+  },
+  {
+    "id": "github_connection_status-03",
+    "actual_tool": "github_connection_status",
+    "actual_arguments": {}
+  },
+  {
+    "id": "github_connection_status-04",
+    "actual_tool": "github_connection_status",
+    "actual_arguments": {}
+  },
+  {
+    "id": "list_repositories-01",
+    "actual_tool": "list_repositories",
+    "actual_arguments": {}
+  },
+  {
+    "id": "list_repositories-02",
+    "actual_tool": "list_repositories",
+    "actual_arguments": {}
+  },
+  {
+    "id": "list_repositories-03",
+    "actual_tool": "list_repositories",
+    "actual_arguments": {}
+  },
+  {
+    "id": "list_repositories-04",
+    "actual_tool": "list_repositories",
+    "actual_arguments": {}
+  }
+]

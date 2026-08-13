@@ -1,0 +1,12 @@
+{
+  "name": "contextbridge-dashboard-source",
+  "private": true,
+  "version": "0.9.0",
+  "description": "React source for the prebuilt ContextBridge dashboard. Runtime does not require Node/npm.",
+  "scripts": {
+    "build": "tsc src/main.tsx --jsx react --target ES2018 --module none --outFile dist/app.js --skipLibCheck --noEmitOnError false"
+  },
+  "devDependencies": {
+    "typescript": ">=5.0"
+  }
+}

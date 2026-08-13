@@ -1,0 +1,1023 @@
+[
+  {
+    "id": "github_connection_status-01",
+    "prompt": "Check my GitHub connection and authenticated account.",
+    "expected_tool": "github_connection_status",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "github_connection_status-02",
+    "prompt": "Which GitHub account is ContextBridge authenticated as?",
+    "expected_tool": "github_connection_status",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "github_connection_status-03",
+    "prompt": "How much GitHub API rate limit do I have remaining?",
+    "expected_tool": "github_connection_status",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "github_connection_status-04",
+    "prompt": "Show the authenticated GitHub connection status.",
+    "expected_tool": "github_connection_status",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_repositories-01",
+    "prompt": "List repositories this token can access.",
+    "expected_tool": "list_repositories",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_repositories-02",
+    "prompt": "Show my visible repositories.",
+    "expected_tool": "list_repositories",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_repositories-03",
+    "prompt": "Which repositories can I access?",
+    "expected_tool": "list_repositories",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_repositories-04",
+    "prompt": "List repos available to this GitHub credential.",
+    "expected_tool": "list_repositories",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_repository-01",
+    "prompt": "Show repository metadata for Vatsal212005/FeatureForge.",
+    "expected_tool": "get_repository",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "FeatureForge"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_repository-02",
+    "prompt": "What is the default branch of Vatsal212005/NeuroQuantNet?",
+    "expected_tool": "get_repository",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "NeuroQuantNet"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_repository-03",
+    "prompt": "Give me repository details for acme/api.",
+    "expected_tool": "get_repository",
+    "expected_arguments": {
+      "owner": "acme",
+      "repo": "api"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_repository-04",
+    "prompt": "Tell me about repository octo/demo.",
+    "expected_tool": "get_repository",
+    "expected_arguments": {
+      "owner": "octo",
+      "repo": "demo"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "search_issues-01",
+    "prompt": "Find open issues across my repos.",
+    "expected_tool": "search_issues",
+    "expected_arguments": {
+      "state": "open"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "search_issues-02",
+    "prompt": "Search open bugs in Vatsal212005/FeatureForge.",
+    "expected_tool": "search_issues",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "FeatureForge",
+      "state": "open"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "search_issues-03",
+    "prompt": "Show closed issues in acme/api.",
+    "expected_tool": "search_issues",
+    "expected_arguments": {
+      "owner": "acme",
+      "repo": "api",
+      "state": "closed"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "search_issues-04",
+    "prompt": "Find unresolved issues assigned to me.",
+    "expected_tool": "search_issues",
+    "expected_arguments": {
+      "state": "open"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_issue-01",
+    "prompt": "Show issue #12 in Vatsal212005/FeatureForge.",
+    "expected_tool": "get_issue",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "FeatureForge",
+      "issue_number": 12
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_issue-02",
+    "prompt": "Get issue 42 from acme/api.",
+    "expected_tool": "get_issue",
+    "expected_arguments": {
+      "owner": "acme",
+      "repo": "api",
+      "issue_number": 42
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_issue-03",
+    "prompt": "Open the details for issue #7 in octo/demo.",
+    "expected_tool": "get_issue",
+    "expected_arguments": {
+      "owner": "octo",
+      "repo": "demo",
+      "issue_number": 7
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_issue-04",
+    "prompt": "What does issue 99 say in team/service?",
+    "expected_tool": "get_issue",
+    "expected_arguments": {
+      "owner": "team",
+      "repo": "service",
+      "issue_number": 99
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_pull_requests-01",
+    "prompt": "List open pull requests in Vatsal212005/FeatureForge.",
+    "expected_tool": "list_pull_requests",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "FeatureForge"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_pull_requests-02",
+    "prompt": "Show recent PRs in acme/api.",
+    "expected_tool": "list_pull_requests",
+    "expected_arguments": {
+      "owner": "acme",
+      "repo": "api"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_pull_requests-03",
+    "prompt": "List closed pull requests for octo/demo.",
+    "expected_tool": "list_pull_requests",
+    "expected_arguments": {
+      "owner": "octo",
+      "repo": "demo",
+      "state": "closed"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_pull_requests-04",
+    "prompt": "Show open PRs for team/service.",
+    "expected_tool": "list_pull_requests",
+    "expected_arguments": {
+      "owner": "team",
+      "repo": "service"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_pull_request-01",
+    "prompt": "Show PR #8 in Vatsal212005/FeatureForge.",
+    "expected_tool": "get_pull_request",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "FeatureForge",
+      "pull_number": 8
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_pull_request-02",
+    "prompt": "Get pull request 14 from acme/api.",
+    "expected_tool": "get_pull_request",
+    "expected_arguments": {
+      "owner": "acme",
+      "repo": "api",
+      "pull_number": 14
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_pull_request-03",
+    "prompt": "Open details for PR #3 in octo/demo.",
+    "expected_tool": "get_pull_request",
+    "expected_arguments": {
+      "owner": "octo",
+      "repo": "demo",
+      "pull_number": 3
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_pull_request-04",
+    "prompt": "What changed in pull request 55 in team/service?",
+    "expected_tool": "get_pull_request",
+    "expected_arguments": {
+      "owner": "team",
+      "repo": "service",
+      "pull_number": 55
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_commits-01",
+    "prompt": "List recent commits in Vatsal212005/FeatureForge.",
+    "expected_tool": "list_commits",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "FeatureForge"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_commits-02",
+    "prompt": "Show commits for acme/api.",
+    "expected_tool": "list_commits",
+    "expected_arguments": {
+      "owner": "acme",
+      "repo": "api"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_commits-03",
+    "prompt": "What are the latest commits in octo/demo?",
+    "expected_tool": "list_commits",
+    "expected_arguments": {
+      "owner": "octo",
+      "repo": "demo"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_commits-04",
+    "prompt": "List commits in team/service.",
+    "expected_tool": "list_commits",
+    "expected_arguments": {
+      "owner": "team",
+      "repo": "service"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_file_contents-01",
+    "prompt": "Read file README.md from Vatsal212005/FeatureForge.",
+    "expected_tool": "get_file_contents",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "FeatureForge"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_file_contents-02",
+    "prompt": "Show file pyproject.toml in acme/api.",
+    "expected_tool": "get_file_contents",
+    "expected_arguments": {
+      "owner": "acme",
+      "repo": "api"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_file_contents-03",
+    "prompt": "Open file package.json from octo/demo.",
+    "expected_tool": "get_file_contents",
+    "expected_arguments": {
+      "owner": "octo",
+      "repo": "demo"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_file_contents-04",
+    "prompt": "Show file contents for src/main.py in team/service.",
+    "expected_tool": "get_file_contents",
+    "expected_arguments": {
+      "owner": "team",
+      "repo": "service"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "search_code-01",
+    "prompt": "Search code for validate_feature in Vatsal212005/FeatureForge.",
+    "expected_tool": "search_code",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "FeatureForge"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "search_code-02",
+    "prompt": "Find function authenticate in code under acme/api.",
+    "expected_tool": "search_code",
+    "expected_arguments": {
+      "owner": "acme",
+      "repo": "api"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "search_code-03",
+    "prompt": "Search code for TODO in octo/demo.",
+    "expected_tool": "search_code",
+    "expected_arguments": {
+      "owner": "octo",
+      "repo": "demo"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "search_code-04",
+    "prompt": "Find class Router in code in team/service.",
+    "expected_tool": "search_code",
+    "expected_arguments": {
+      "owner": "team",
+      "repo": "service"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_workflow_runs-01",
+    "prompt": "Show GitHub Actions workflow runs in Vatsal212005/FeatureForge.",
+    "expected_tool": "get_workflow_runs",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "FeatureForge"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_workflow_runs-02",
+    "prompt": "List failed workflow runs in acme/api.",
+    "expected_tool": "get_workflow_runs",
+    "expected_arguments": {
+      "owner": "acme",
+      "repo": "api"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_workflow_runs-03",
+    "prompt": "Show recent Actions runs in octo/demo.",
+    "expected_tool": "get_workflow_runs",
+    "expected_arguments": {
+      "owner": "octo",
+      "repo": "demo"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_workflow_runs-04",
+    "prompt": "Which CI runs failed in team/service?",
+    "expected_tool": "get_workflow_runs",
+    "expected_arguments": {
+      "owner": "team",
+      "repo": "service"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_commit_status-01",
+    "prompt": "Get commit status for main in Vatsal212005/FeatureForge.",
+    "expected_tool": "get_commit_status",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "FeatureForge"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_commit_status-02",
+    "prompt": "Show combined status contexts for main in acme/api.",
+    "expected_tool": "get_commit_status",
+    "expected_arguments": {
+      "owner": "acme",
+      "repo": "api"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_commit_status-03",
+    "prompt": "What is the commit status for abc123 in octo/demo?",
+    "expected_tool": "get_commit_status",
+    "expected_arguments": {
+      "owner": "octo",
+      "repo": "demo"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_commit_status-04",
+    "prompt": "Check status contexts for release in team/service.",
+    "expected_tool": "get_commit_status",
+    "expected_arguments": {
+      "owner": "team",
+      "repo": "service"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_tool_metrics-01",
+    "prompt": "Show tool metrics for the last 24 hours.",
+    "expected_tool": "get_tool_metrics",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_tool_metrics-02",
+    "prompt": "What is the MCP tool success rate?",
+    "expected_tool": "get_tool_metrics",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_tool_metrics-03",
+    "prompt": "Show average latency for tool calls.",
+    "expected_tool": "get_tool_metrics",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_tool_metrics-04",
+    "prompt": "What is the p95 latency of our tools?",
+    "expected_tool": "get_tool_metrics",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_recent_tool_calls-01",
+    "prompt": "Show recent tool calls.",
+    "expected_tool": "get_recent_tool_calls",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_recent_tool_calls-02",
+    "prompt": "List the last tool execution history.",
+    "expected_tool": "get_recent_tool_calls",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_recent_tool_calls-03",
+    "prompt": "What were the most recent MCP tool calls?",
+    "expected_tool": "get_recent_tool_calls",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_recent_tool_calls-04",
+    "prompt": "Show the latest tool-call history.",
+    "expected_tool": "get_recent_tool_calls",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_audit_summary-01",
+    "prompt": "Show the audit summary.",
+    "expected_tool": "get_audit_summary",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_audit_summary-02",
+    "prompt": "Summarize recent audit events.",
+    "expected_tool": "get_audit_summary",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_audit_summary-03",
+    "prompt": "Give me the audit log summary.",
+    "expected_tool": "get_audit_summary",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_audit_summary-04",
+    "prompt": "What does the current audit trail show?",
+    "expected_tool": "get_audit_summary",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_write_policy-01",
+    "prompt": "Show the current write policy.",
+    "expected_tool": "get_write_policy",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_write_policy-02",
+    "prompt": "Are GitHub writes enabled?",
+    "expected_tool": "get_write_policy",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_write_policy-03",
+    "prompt": "Is ContextBridge still in dry run?",
+    "expected_tool": "get_write_policy",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_write_policy-04",
+    "prompt": "Show the mutation policy and repository allowlist.",
+    "expected_tool": "get_write_policy",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_pending_actions-01",
+    "prompt": "List pending actions.",
+    "expected_tool": "list_pending_actions",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_pending_actions-02",
+    "prompt": "Show all pending action requests.",
+    "expected_tool": "list_pending_actions",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_pending_actions-03",
+    "prompt": "What is in the pending action queue?",
+    "expected_tool": "list_pending_actions",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "list_pending_actions-04",
+    "prompt": "List the human confirmation queue.",
+    "expected_tool": "list_pending_actions",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_pending_action-01",
+    "prompt": "Show action id act_demo123.",
+    "expected_tool": "get_pending_action",
+    "expected_arguments": {
+      "action_id": "act_demo123"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_pending_action-02",
+    "prompt": "Inspect pending action act_alpha_456.",
+    "expected_tool": "get_pending_action",
+    "expected_arguments": {
+      "action_id": "act_alpha_456"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_pending_action-03",
+    "prompt": "Get details for act_request789 action id.",
+    "expected_tool": "get_pending_action",
+    "expected_arguments": {
+      "action_id": "act_request789"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_pending_action-04",
+    "prompt": "Show me act_ZYX987.",
+    "expected_tool": "get_pending_action",
+    "expected_arguments": {
+      "action_id": "act_ZYX987"
+    },
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "execute_approved_action-01",
+    "prompt": "Execute approved action act_demo123.",
+    "expected_tool": "execute_approved_action",
+    "expected_arguments": {
+      "action_id": "act_demo123"
+    },
+    "risk": "destructive",
+    "confirmation_required": true
+  },
+  {
+    "id": "execute_approved_action-02",
+    "prompt": "Run approved action act_alpha_456.",
+    "expected_tool": "execute_approved_action",
+    "expected_arguments": {
+      "action_id": "act_alpha_456"
+    },
+    "risk": "destructive",
+    "confirmation_required": true
+  },
+  {
+    "id": "execute_approved_action-03",
+    "prompt": "Execute act_request789 after approval.",
+    "expected_tool": "execute_approved_action",
+    "expected_arguments": {
+      "action_id": "act_request789"
+    },
+    "risk": "destructive",
+    "confirmation_required": true
+  },
+  {
+    "id": "execute_approved_action-04",
+    "prompt": "Run approved action id act_ZYX987.",
+    "expected_tool": "execute_approved_action",
+    "expected_arguments": {
+      "action_id": "act_ZYX987"
+    },
+    "risk": "destructive",
+    "confirmation_required": true
+  },
+  {
+    "id": "create_issue-01",
+    "prompt": "Create an issue in Vatsal212005/FeatureForge about upload validation.",
+    "expected_tool": "create_issue",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "FeatureForge"
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "create_issue-02",
+    "prompt": "Open an issue in acme/api for broken login.",
+    "expected_tool": "create_issue",
+    "expected_arguments": {
+      "owner": "acme",
+      "repo": "api"
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "create_issue-03",
+    "prompt": "File a bug in octo/demo about a crash.",
+    "expected_tool": "create_issue",
+    "expected_arguments": {
+      "owner": "octo",
+      "repo": "demo"
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "create_issue-04",
+    "prompt": "Create issue in team/service for timeout handling.",
+    "expected_tool": "create_issue",
+    "expected_arguments": {
+      "owner": "team",
+      "repo": "service"
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "add_issue_comment-01",
+    "prompt": "Add a comment to issue #12 in Vatsal212005/FeatureForge.",
+    "expected_tool": "add_issue_comment",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "FeatureForge",
+      "issue_number": 12
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "add_issue_comment-02",
+    "prompt": "Comment on issue 42 in acme/api.",
+    "expected_tool": "add_issue_comment",
+    "expected_arguments": {
+      "owner": "acme",
+      "repo": "api",
+      "issue_number": 42
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "add_issue_comment-03",
+    "prompt": "Reply to issue #7 in octo/demo.",
+    "expected_tool": "add_issue_comment",
+    "expected_arguments": {
+      "owner": "octo",
+      "repo": "demo",
+      "issue_number": 7
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "add_issue_comment-04",
+    "prompt": "Add a note to issue 99 in team/service.",
+    "expected_tool": "add_issue_comment",
+    "expected_arguments": {
+      "owner": "team",
+      "repo": "service",
+      "issue_number": 99
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "add_labels-01",
+    "prompt": "Add a label to issue #12 in Vatsal212005/FeatureForge.",
+    "expected_tool": "add_labels",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "FeatureForge",
+      "issue_number": 12
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "add_labels-02",
+    "prompt": "Tag issue 42 in acme/api as bug.",
+    "expected_tool": "add_labels",
+    "expected_arguments": {
+      "owner": "acme",
+      "repo": "api",
+      "issue_number": 42
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "add_labels-03",
+    "prompt": "Apply a label to issue #7 in octo/demo.",
+    "expected_tool": "add_labels",
+    "expected_arguments": {
+      "owner": "octo",
+      "repo": "demo",
+      "issue_number": 7
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "add_labels-04",
+    "prompt": "Mark issue 99 in team/service with a label.",
+    "expected_tool": "add_labels",
+    "expected_arguments": {
+      "owner": "team",
+      "repo": "service",
+      "issue_number": 99
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "close_issue-01",
+    "prompt": "Close issue #12 in Vatsal212005/FeatureForge.",
+    "expected_tool": "close_issue",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "FeatureForge",
+      "issue_number": 12
+    },
+    "risk": "destructive",
+    "confirmation_required": true
+  },
+  {
+    "id": "close_issue-02",
+    "prompt": "Close issue 42 in acme/api.",
+    "expected_tool": "close_issue",
+    "expected_arguments": {
+      "owner": "acme",
+      "repo": "api",
+      "issue_number": 42
+    },
+    "risk": "destructive",
+    "confirmation_required": true
+  },
+  {
+    "id": "close_issue-03",
+    "prompt": "Close issue #7 in octo/demo.",
+    "expected_tool": "close_issue",
+    "expected_arguments": {
+      "owner": "octo",
+      "repo": "demo",
+      "issue_number": 7
+    },
+    "risk": "destructive",
+    "confirmation_required": true
+  },
+  {
+    "id": "close_issue-04",
+    "prompt": "Close issue 99 in team/service.",
+    "expected_tool": "close_issue",
+    "expected_arguments": {
+      "owner": "team",
+      "repo": "service",
+      "issue_number": 99
+    },
+    "risk": "destructive",
+    "confirmation_required": true
+  },
+  {
+    "id": "reopen_issue-01",
+    "prompt": "Reopen issue #12 in Vatsal212005/FeatureForge.",
+    "expected_tool": "reopen_issue",
+    "expected_arguments": {
+      "owner": "Vatsal212005",
+      "repo": "FeatureForge",
+      "issue_number": 12
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "reopen_issue-02",
+    "prompt": "Open issue 42 again in acme/api.",
+    "expected_tool": "reopen_issue",
+    "expected_arguments": {
+      "owner": "acme",
+      "repo": "api",
+      "issue_number": 42
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "reopen_issue-03",
+    "prompt": "Reopen issue #7 in octo/demo.",
+    "expected_tool": "reopen_issue",
+    "expected_arguments": {
+      "owner": "octo",
+      "repo": "demo",
+      "issue_number": 7
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "reopen_issue-04",
+    "prompt": "Reopen issue 99 in team/service.",
+    "expected_tool": "reopen_issue",
+    "expected_arguments": {
+      "owner": "team",
+      "repo": "service",
+      "issue_number": 99
+    },
+    "risk": "write",
+    "confirmation_required": true
+  },
+  {
+    "id": "get_evaluation_summary-01",
+    "prompt": "Show the latest evaluation score.",
+    "expected_tool": "get_evaluation_summary",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_evaluation_summary-02",
+    "prompt": "What was our tool selection accuracy?",
+    "expected_tool": "get_evaluation_summary",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_evaluation_summary-03",
+    "prompt": "Show the latest benchmark result.",
+    "expected_tool": "get_evaluation_summary",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  },
+  {
+    "id": "get_evaluation_summary-04",
+    "prompt": "Give me the current evaluation score.",
+    "expected_tool": "get_evaluation_summary",
+    "expected_arguments": {},
+    "risk": "read",
+    "confirmation_required": false
+  }
+]
