@@ -44,7 +44,6 @@ The result is an AI-to-GitHub infrastructure layer designed around **least privi
 - [VS Code MCP Integration](#vs-code-mcp-integration)
 - [Project Structure](#project-structure)
 - [Installation](#installation)
-- [Environment Configuration](#environment-configuration)
 - [Running ContextBridge](#running-contextbridge)
 - [Using the Chat Interface](#using-the-chat-interface)
 - [Using ContextBridge from VS Code](#using-contextbridge-from-vs-code)
